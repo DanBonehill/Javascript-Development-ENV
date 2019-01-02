@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "author": "Dan Bonehill",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "prestart": "node buildScripts/startMessage.js",
+    "start": "npm-run-all --parallel open:src",
+    "open:src": "node buildScripts/srcServer.js"
+  },
   "dependencies": {
     "whatwg-fetch": "3.0.0"
   },
