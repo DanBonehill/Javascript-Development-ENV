@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const open = require('open');
 
 const port = 3000;
 const app = express();
@@ -13,6 +12,6 @@ app.listen(port, (err) => {
   if (err) {
     console.log(err);
   } else {
-    open(`http://localhost:${port}`, 'google chrome');
+    console.log(`Server running on PORT ${port}.`);
   }
 } );
