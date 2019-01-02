@@ -30,6 +30,7 @@ Options to share work in progress:
 npm scripts
 
 ##### Transpiling
+Babel
 
 ##### Bundling
 
