@@ -1,8 +1,16 @@
 import express from 'express';
 import path from 'path';
+import webpack from 'webpack';
+import config from '../webpack.config.dev';
 
 const port = 3000;
 const app = express();
+const complier = webpack(config);
+
+app.use(require('webpack-dev-middleware')(complier, {
+  noInfo: true,
+  publicPath: config.output.publicPath
+}));
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '../src/index.html'));
