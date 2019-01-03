@@ -36,6 +36,7 @@ Babel
 Webpack
 
 ##### Linting
+ESlint
 
 ##### HTTP
 
