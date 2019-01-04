@@ -41,6 +41,55 @@ ESlint
 ##### HTTP
 
 ##### Testing & CI
+* Framework
+  - Mocha
+  - Jasmine (assertion library built in)
+  - Tape
+  - QUnit
+  - AVA
+  - Jest
+  
+* Assertion Library
+  - Chai
+  - Should.js
+  - Expect
+  
+* Helper Libraries
+  - JSDOM
+  - Cheerio
+
+* Where to run tests
+  - Browser - Karma, Testem
+  - Headless Browser - PhantomJS
+  - In-memory DOM - JSDOM
+  
+* Where to place tests
+  - Centralized
+    - Less 'noise' in src folder
+    - Deployment confusion
+    - Inertia
+    
+  - Alongside
+    - Easy imports
+    - Clear visibility
+    - Convenient to open
+    - No recreating folder structure
+    - Easy to move files
+    
+* When to run tests
+  - Unit tests should run when you hit save
+  
+###### Unit Tests
+- Tests a small unit
+- Often single function
+- Fast
+- Run upon save
+
+###### Integration Tests
+- Test multiple units
+- Often involves clicking and waiting
+- Slow
+- Often run on demand, or in QA
 
 ##### Production Build
 
