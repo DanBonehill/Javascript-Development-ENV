@@ -1,4 +1,5 @@
 # Javascript-Development-ENV
+[![Build Status](https://travis-ci.org/DanBonehill/Javascript-Development-ENV.svg?branch=master)](https://travis-ci.org/DanBonehill/Javascript-Development-ENV)
 
 ### Outline
 Below are all the decisions we have made for this starter kit
